@@ -9,7 +9,7 @@ This repository contains my custom tmux setup. Follow the instructions below to 
    Open your terminal and run the following command to clone the repository. The repository will be cloned into `~/.config/tmux`.
 
    ```sh
-   git clone https://github.com/your-username/tmux-setup.git ~/.config/tmux
+   git clone https://github.com/johansolbakken/johsoltmux.git ~/.config/tmux
    ```
 
 2. **Install tmux**
