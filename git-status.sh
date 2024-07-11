@@ -15,9 +15,9 @@ if [ -n "$branch" ]; then
     untracked_files=$(git ls-files --others --exclude-standard | wc -l | xargs)    # Determine the output based on the file counts
 
     if [ "$added_files" -eq 0 ] && [ "$not_staged_files" -eq 0 ] && [ "$untracked_files" -eq 0 ]; then
-        echo "#[fg=green]✔ #[default]nothing to do"
+        echo "#[fg=cyan]($branch) #[fg=green]✔ #[default]nothing to do"
     else
-        echo "#[fg=yellow]✗ #[default][#[fg=green]$added_files staged#[default], #[fg=red]$not_staged_files unstaged#[default], #[fg=gray]$untracked_files untracked#[default]]"
+        echo "#[fg=yellow]✗ #[fg=cyan]($branch) #[default][#[fg=green]$added_files staged#[default], #[fg=red]$not_staged_files unstaged#[default], #[fg=gray]$untracked_files untracked#[default]]"
     fi
 else
     echo "#[fg=gray]not git repo#[default]"
