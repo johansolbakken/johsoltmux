@@ -20,6 +20,6 @@ if [ -n "$branch" ]; then
         echo "#[fg=yellow]✗ #[default][#[fg=green]$added_files staged#[default], #[fg=red]$not_staged_files unstaged#[default], #[fg=gray]$untracked_files untracked#[default]]"
     fi
 else
-    echo ""
+    echo "#[fg=gray]not git repo#[default]"
 fi
 
