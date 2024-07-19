@@ -2,6 +2,12 @@
 
 This repository contains my custom tmux setup. Follow the instructions below to install and configure it on your system.
 
+## Installation on linux
+
+~~~sh
+git clone https://github.com/johansolbakken/johsoltmux.git "${XDG_CONFIG_HOME:-$HOME/.config}"/tmux
+~~~
+
 ## Installation on macOS
 
 1. **Clone the Repository**
